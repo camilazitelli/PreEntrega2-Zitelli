@@ -1,0 +1,155 @@
+footer {
+    color:whitesmoke;
+    background-color: #d7cec7;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    width: 100%;
+    transition: background-image 2s;
+    bottom: 0;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+footer a{
+    text-decoration: none;
+    color: #76323F;
+}
+
+footer:hover {
+    background-image: linear-gradient(to bottom,#D7CEC7,#C09F80);
+}
+
+header {
+    background-color: whitesmoke;
+    color: #565656;
+    text-align: start;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Bebas Neue', cursive;
+    background-color:whitesmoke ;
+}
+
+nav a{
+    color: #565656;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.principal {
+    display: grid;
+    grid-template-areas: "vino cerveza champagne bebidasblancas";
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 50px;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: inline-block;
+    width: 19%;
+    font-size: 14px;
+    position: relative;
+}
+
+.fotocatalogo {
+    width: 300px;
+    height: 400px;
+    transition: opacity 1s;
+}
+
+.fotocatalogo:hover {
+    opacity: 70%;
+    filter: blur(5px);
+}
+
+main {
+    background-color: whitesmoke;
+    position: relative;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+}
+
+@media screen and (max-width: 768px) {
+    footer {flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecera {flex-direction: column;
+    }
+}
+
+.caja {
+    position: relative;
+    display: inline-block;
+    justify-self: center;
+    padding: 25px;
+    margin-left: 0,2%;
+    left: 5%;
+}
+.texto {
+    position: absolute;
+    top: 20%;
+    font-family: 'bebas neue', cursive;
+    font-size: 60px;
+    color: white;
+    margin: 3%;
+}
+
+.texto:hover {
+    font-size: 70px;
+}
+
+/*Animacion*/
+
+.barrel {
+    animation-name: barrel;
+    width: 100px;
+    height: 100px;
+    margin-top: -25px;
+    margin-left: -30px;
+    padding: 25px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes barrel {
+0% { transform: rotate(0deg); }
+25% { transform: rotate(5deg); }
+50% { transform: rotate(0deg); }
+75% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+body{
+    background-color: #f5dd7b;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+p {
+    text-indent: 25px;
+}
